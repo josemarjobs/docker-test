@@ -2,7 +2,6 @@ FROM	ubuntu:14.04
 
 RUN	apt-get update
 RUN	apt-get install -y git curl nano vim nginx
-RUN curl https://raw.githubusercontent.com/sayene/dotfiles/master/.bashrc > /.bashrc
 
 RUN	mkdir /apps
 ADD	. /apps/html
